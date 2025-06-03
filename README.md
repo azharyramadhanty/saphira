@@ -9,15 +9,15 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
 - [Python](https://python.org) version 3.13.1
 
   ```bash
-  # determine node version
-  node --version
+  # determine python version
+  python --version
   ```
 
 - [FastAPI](https://www.python.org/) version 0.115.12
 
   ```bash
-  # determine node version
-  node --version
+  # determine FastAPI version
+  python -c "import fastapi; print(fastapi.__version__)"
   ```
 
 ## To run the bot
@@ -25,13 +25,13 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
 - Install modules
 
   ```bash
-  npm install
+  python -m pip install -r requirements.txt
   ```
 
 - Start the bot
 
   ```bash
-  npm start
+  python -m uvicorn src.main:app --reload
   ```
 
 ## Testing the bot using Bot Framework Emulator
